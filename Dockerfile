@@ -9,6 +9,9 @@ RUN apt-get update &&\
     rm -rfv /var/lib/apt/lists/*
 
 
+RUN cd /usr/bin \
+	&& ln -s python3 python
+
 # if this is called "PIP_VERSION", pip explodes with "ValueError: invalid truth value '<VERSION>'"
 ENV PYTHON_PIP_VERSION 19.3.1
 # https://github.com/pypa/get-pip
