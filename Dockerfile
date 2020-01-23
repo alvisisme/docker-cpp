@@ -2,7 +2,7 @@ FROM ubuntu:18.04
 
 RUN apt-get update &&\
     apt-get -y install \
-      git gnupg wget curl ca-certificates tar python3 python3-pip \
+      git gnupg wget curl ca-certificates tar python python-pip \
       g++ \
       autoconf automake make cmake \
       doxygen graphviz && \
